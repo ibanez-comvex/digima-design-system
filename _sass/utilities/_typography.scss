@@ -1,0 +1,135 @@
+//
+// Utility classes for typography
+//
+
+// stylelint-disable primer/selector-no-utility
+.dg-5{
+  @include dg-5;
+}
+
+.dg-4{
+  @include dg-4;
+}
+
+.dg-3{
+  @include dg-3;
+}
+
+.dg-2{
+  @include dg-2;
+}
+
+.dg-1{
+  @include dg-1;
+}
+
+.dg-0{
+  @include dg-0;
+}
+
+.fs-1 {
+  @include fs-1;
+}
+
+.fs-2 {
+  @include fs-2;
+}
+
+.fs-3 {
+  @include fs-3;
+}
+
+.fs-4 {
+  @include fs-4;
+}
+
+.fs-5 {
+  @include fs-5;
+}
+
+.fs-6 {
+  @include fs-6;
+}
+
+.fs-7 {
+  @include fs-7;
+}
+
+.fs-8 {
+  @include fs-8;
+}
+
+.fs-9 {
+  @include fs-9;
+}
+
+.fs-10 {
+  @include fs-10;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.lh-0 {
+  line-height: 0 !important;
+}
+
+.lh-default {
+  line-height: $body-line-height;
+}
+
+.lh-tight {
+  line-height: $body-heading-line-height;
+}
+
+.ls-5 {
+  letter-spacing: 0.05em !important;
+}
+
+.ls-10 {
+  letter-spacing: 0.1em !important;
+}
+
+.ls-0 {
+  letter-spacing: 0 !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+
+// stylelint-enable primer/selector-no-utility

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+//
+// Styles for rendered markdown in the .main-content container
+//
+// stylelint-disable selector-no-type, max-nesting-depth, selector-max-compound-selectors, selector-max-type
+
+.page-content {
+
+
+  .image-caption{
+      @include fs-2;
+      text-align: center;
+      margin-top: -$sp-3;
+      padding-bottom: $sp-4;
+      color: $grey-dk-200;
+  }
+
+  figure .image-caption{
+    margin-top: $sp-3 !important;
+  }
+
+  .image-inspect{
+    position: relative;
+    display: block;
+
+    &:hover{
+
+      img{
+        border:1px solid $grey-lt-300;
+      }
+
+      .inspect-btn{
+        color:$blue-200;
+        svg{
+          fill:$blue-200;
+        }
+      }
+
+    }
+
+    .inspect-btn{
+      display: flex;
+      position: absolute;
+      right: 8px;
+      bottom: 15px;
+      vertical-align: middle;
+      color:$grey-dk-000;
+      line-height: 14px;
+      z-index: 2;
+      @include fs-2;
+
+      svg{
+        border:none;
+        margin-right: $sp-1;
+        fill:$grey-dk-000;
+        height: 14px;
+        width: 14px;
+      }
+
+    }
+
+  }
+
+  a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  ul,
+  ol {
+    padding-left: 1.5em;
+  }
+
+  ol {
+    list-style-type: none;
+    counter-reset: step-counter;
+
+    > li {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0.2em;
+        left: -1.6em;
+        color: $grey-dk-000;
+        content: counter(step-counter);
+        counter-increment: step-counter;
+        @include fs-3;
+
+        @include mq(sm) {
+          top: 0.11em;
+        }
+      }
+
+      ol {
+        counter-reset: sub-counter;
+
+        li {
+          &::before {
+            content: counter(sub-counter, lower-alpha);
+            counter-increment: sub-counter;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    > li {
+      &::before {
+        position: absolute;
+        margin-left: -1.4em;
+        color: $grey-dk-000;
+        content: "•";
+      }
+    }
+  }
+
+  .task-list {
+    padding-left: 0;
+  }
+
+  .task-list-item {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: "";
+    }
+  }
+
+  .task-list-item-checkbox {
+    margin-right: 0.6em;
+  }
+
+  hr + * {
+    margin-top: 0;
+  }
+
+  h1:first-of-type {
+    margin-top: 0.5em;
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+  }
+
+  dt,
+  dd {
+    margin: 0.25em 0;
+  }
+
+  dt {
+    text-align: right;
+
+    &::after {
+      content: ":";
+    }
+  }
+
+  dd {
+    margin-left: 1em;
+    font-weight: 500;
+  }
+}

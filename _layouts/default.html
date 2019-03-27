@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+{% include head.html %}
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="{{ site.url }}{{ site.baseurl }}" class="site-title fs-6 lh-tight text-white">
+        <svg viewBox="0 0 378 133"><path d="M84 108h14V50H84zM91 41c4.747 0 9-4.253 9-10 0-4.747-4.253-9-9-9-5.747 0-10 4.253-10 9 0 5.747 4.253 10 10 10M173 101c0 9.142-1.787 15.253-5 20-5.297 6.732-14.966 12-27 12-17.81 0-26.428-10.743-29-20h16c1.705 2.936 3.912 4.938 6 6 3.271 1.782 6.32 2.202 8 2 8.197.202 17.13-5.485 17-17v-5c-2.709 5.14-8.803 10.3-19 10-16.18.3-29-12.34-29-30 0-18.993 13.45-31 29-31 8.725 0 15.871 3.792 19 9v-7h14v51zm-48-23c0 10.42 7.153 18 17 18 5.08 0 9.122-1.764 12-5 3.134-2.893 4.896-7.152 5-12 0-4.395-1.348-8.964-4-12-2.841-3.715-7.092-6-13-6-9.225 0-17 7.166-17 17zM189 108h14V50h-14zM196 41c4.747 0 9-4.253 9-10 0-4.747-4.253-9-9-9-5.747 0-10 4.253-10 9 0 5.747 4.253 10 10 10M219 50h13v7c1.193-2.534 6.766-9 17-9 4.485 0 9.742 1.378 14 6 1.21 1.315 2.68 3.753 3 5 1.469-1.565 2.73-3.474 5-5 3.197-3.668 8.243-6 14-6 5.179 0 11.276 1.272 16 6 4.948 5.343 6 10.113 6 22v32h-14V77c.227-4.088-.09-8.116-2-11-1.558-3.052-4.292-4.96-9-5-4.965.04-8.33 2.159-10 5-1.904 3.519-2.114 6.595-2 10v32h-14V76c.114-3.3-.202-6.585-2-10-1.357-2.628-4.195-4.855-9-5-5.183.04-8.337 2.478-10 5-1.701 3.519-2.227 7.124-2 11v31h-14V50zM378 107h-14v-8c-3.3 6.653-10.907 10-19 10-18.267 0-29-14.333-29-31 0-17.653 13.025-30 29-30 10.49 0 16.845 5.546 19 10v-8h14v57zm-49-28c0 7.486 5.135 18 17 18 8.138 0 13.166-4.036 16-9 1.148-2.893 1.776-5.654 2-9 .09-2.283-.432-5.15-2-8-1.995-5.22-7.338-10-16-10-10.713 0-17 9.132-17 18z"></path><path d="M34 91c-8.284 0-15-6.716-15-15 0-8.284 6.716-15 15-15 8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15zm6-48c-1.79-.699-4.115-.953-7-1-18.002.047-33 15.035-33 34 0 18.012 14.998 33 33 33 19.002 0 33.27-14.09 34-33-.171-3.846 0-6.309 0-14V0L40 43z" class="digima-d">
+        </path></svg>
+      </a>
+      {% if site.search_enabled != nil %}
+      <div class="search js-search">
+        <div class="search-input-wrap">
+          <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search for something..." aria-label="Search {{ site.title }}" autocomplete="off">
+          <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+        </div>
+        <div class="js-search-results search-results-wrap"></div>
+      </div>
+      {% endif %}
+      {% if site.aux_links != nil %}
+        <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+          {% for link in site.aux_links %}
+            <li class="d-inline-block my-0{% unless forloop.last %} mr-2{% endunless %}"><a href="{{ link.last }}">{{ link.first }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+      <div class="navigation main-nav js-main-nav">
+        {% include nav.html %}
+      </div>
+    </div>
+
+
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+      </div>
+      <div class="main-content">
+        {% unless page.url == "/" %}
+          <!-- {% if page.parent %}
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                {% if page.grand_parent %}
+                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.grand_parent }}</a></li>
+                  <li class="breadcrumb-nav-list-item"><a href="{{ second_level_url }}">{{ page.parent }}</a></li>
+                {% else %}
+                  <li class="breadcrumb-nav-list-item"><a href="{{ first_level_url }}">{{ page.parent }}</a></li>
+                {% endif %}
+                <li class="breadcrumb-nav-list-item"><span>{{ page.title }}</span></li>
+              </ol>
+            </nav>
+          {% endif %} -->
+        {% endunless %}
+        <div id="main-content" class="page-content" role="main">
+          {{ content }}
+
+          {% if page.has_children == true and page.has_toc != false %}
+          <hr>
+          <h2 class="text-delta">Table of contents</h2>
+          {% assign children_list = site.pages | sort:"nav_order" %}
+          <ul>
+            {% for child in children_list %}
+              {% if child.parent == page.title and child.title != page.title %}
+              <li>
+                <a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="{{ "/assets/js/just-the-docs.js" | absolute_url }}"></script>
+</body>
+</html>

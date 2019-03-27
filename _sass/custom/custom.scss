@@ -1,0 +1,132 @@
+// //
+// // Typography
+// //
+//
+$font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', Osaka, 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+$mono-font-family: "SFMono-Regular", Menlo, Consolas, Monospace;
+$root-font-size: 16px; // Base font-size for rems
+$body-line-height: 1.5;
+$body-heading-line-height: 1.15;
+//
+// //
+// // Colors
+// //
+//
+$white: #fff;
+//
+$grey-dk-000: #7992a5;
+$grey-dk-100: #527187;
+$grey-dk-200: #335267;
+$grey-dk-250: #254157;
+$grey-dk-300: #17344a;
+
+$grey-lt-000: #ebf3f5;
+$grey-lt-100: #dfe9ed;
+$grey-lt-200: #d5dfe6;
+$grey-lt-300: #bccad4;
+
+$purple-00: #9775FA;
+$purple-000: #7950f2;
+$purple-100: #7048e8;
+$purple-200: #6741d9;
+$purple-300: #5f3dc4;
+
+$blue-000: #d0ebff;
+$blue-100: #339af0;
+$blue-200: #1971c2;
+$blue-300: #1864ab;
+
+$lime-700: #66A80F;
+
+$yellow-400: #A95700;
+
+$red-400: #C92A2A;
+
+$green-000: #c3fae8;
+$green-100: #20c997;
+$green-200: #099268;
+$green-300: #007350;
+
+$cyan-500: #3BC9DB;
+
+//
+$body-background-color: $white;
+$sidebar-color: $grey-dk-300;
+$code-background-color: $grey-lt-000;
+
+$body-text-color: $grey-dk-200;
+$link-active: $green-100;
+$body-heading-color: $grey-dk-300;
+$nav-child-link-color: $grey-dk-100;
+$link-color: $blue-200;
+$btn-primary-color: $purple-100;
+$base-button-color: #f7f7f7;
+
+//
+// //
+// // Media queries in pixels
+// //
+//
+$media-queries: (
+  xs: 320px,
+  sm: 500px,
+  md: 740px,
+  lg: 1120px,
+  xl: 1400px
+);
+//
+// //
+// // Spacing
+// //
+//
+$spacing-unit: 1rem; // 1rem == 16px
+//
+$spacers: (
+  sp-0: 0,
+  sp-1: $spacing-unit * 0.25,
+  sp-2: $spacing-unit * 0.5,
+  sp-3: $spacing-unit * 0.75,
+  sp-4: $spacing-unit,
+  sp-5: $spacing-unit * 1.5,
+  sp-6: $spacing-unit * 2,
+  sp-7: $spacing-unit * 2.5,
+  sp-8: $spacing-unit * 3,
+  sp-9: $spacing-unit * 3.5,
+  sp-10: $spacing-unit * 4
+);
+//
+$sp-1: map-get($spacers, sp-1); // 0.25 rem == 4px
+$sp-2: map-get($spacers, sp-2); // 0.5  rem == 8px
+$sp-3: map-get($spacers, sp-3); // 0.75 rem == 12px
+$sp-4: map-get($spacers, sp-4); // 1    rem == 16px
+$sp-5: map-get($spacers, sp-5); // 1.5  rem == 24px
+$sp-6: map-get($spacers, sp-6); // 2    rem == 32px
+$sp-7: map-get($spacers, sp-7); // 2.5  rem == 40px
+$sp-8: map-get($spacers, sp-8); // 3    rem == 48px
+$sp-9: map-get($spacers, sp-9); // 4    rem == 48px
+$sp-10: map-get($spacers, sp-10); // 4.5  rem == 48px
+//
+// //
+// // Borders
+// //
+//
+$border: 1px solid;
+$border-radius: 4px;
+$border-color: $grey-lt-100;
+//
+// //
+// // Grid system
+// //
+//
+$gutter-spacing: $sp-6;
+$gutter-spacing-sm: $sp-3;
+$nav-width: 264px;
+$content-width: 800px;
+//
+$media-queries: (
+  xs: 320px,
+  sm: 500px,
+  md: 740px,
+  lg: 800px,
+  xl: 1316px
+);

@@ -1,0 +1,21 @@
+{% capture imagePath %}{{ page.parent | slugify }}/{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+{% if include.invisionID and include.caption %}
+<a class="image-inspect" target='blank' href="https://projects.invisionapp.com/d/main#/console/16722341/{{ include.invisionID }}/inspect">
+  <span class="inspect-btn">{% include icons/view.svg %}Inspect</span>
+  <img src="{{site.url}}/assets/images/{{ imagePath }}.jpg" />
+</a>
+  <p class="image-caption">{{ include.caption }}</p>
+{% elsif include.caption %}
+  <figure>
+      <img src="{{site.url}}/assets/images/{{ imagePath }}.jpg"/>
+      <p class="image-caption">{{ include.caption }}</p>
+  </figure>
+{% elsif include.invisionID %}
+  <a class="image-inspect" target='blank' href="https://projects.invisionapp.com/d/main#/console/16722341/{{ include.invisionID }}/inspect">
+    <span class="inspect-btn">{% include icons/view.svg %}Inspect</span>
+    <img src="{{site.url}}/assets/images/{{ imagePath }}.jpg" />
+  </a>
+
+{% else %}
+   ![]({{site.url}}/assets/images/{{ imagePath }}.jpg)
+{% endif %}

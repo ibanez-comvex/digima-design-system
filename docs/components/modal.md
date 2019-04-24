@@ -117,3 +117,10 @@ Those kind of dialogs should be used for actions such as deleting a web form, a 
 Drawer modal are used to extend the interface without directing the user to a new page. This is often used on tables to display additional information or as an alternative to a page.
 <a target="blank" href="https://docs.google.com/spreadsheets/d/168ljhKlfHvYJE68rxPE0e614wuitF6PGe8gtczzFfB4/edit?usp=sharing">See full list here.</a>
 {% include images.html name="modal-drawer-edit-web-form" invisionID="352589134" %}
+
+---
+
+### Special Events
+
+Special moments modals are used to attract users attention about a specific event or a necessary step. They have a large overlapping image and centered content.
+{% include images.html name="modal-special-events-call-digima" invisionID="354842801" %}

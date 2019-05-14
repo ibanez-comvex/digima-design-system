@@ -18,7 +18,7 @@ nav_order: 6
 
 ## Description
 
-Avatars are used for both users and contacts. To avoid confusion, contact avatars can only use placeholders avatars and should only be displayed on contact profiles.
+Avatars are images that can be used by both users and contacts as their profile picture. To avoid confusion, contact avatars can only use placeholders avatars and should only be displayed on contact profiles.
 Users can upload an image to personalized their avatar.
 
 ---
@@ -28,14 +28,14 @@ Users can upload an image to personalized their avatar.
 {% include images.html name="anatomy-avatars" %}
 
 1. **Image**: Avatars house an image that represents either a user or a contact.
-1. **Status**: On contact profiles, avatars can show the contact's current pipeline status.
-2. **Tooltip**: When an avatar is part of a stacked group, the name of the user/contact should be displayed on hover in a tooltip.
+1. **Status**: On contact profiles, avatars can show the contact's current pipeline status color.
+2. **Tooltip**: When an avatar is part of a stacked group or when there is limited space available, the name of the user/contact should be displayed on hover in a tooltip.
 
 ---
 
 ## Avatar Types
 
-Users have the choice of uploading an image to personalized their avatar or use one of the 3 placeholder avatars. Contacts can only use placeholder avatars.
+Users have the choice of uploading an image to personalized their avatar or use one of the 3 placeholder avatars. Contacts will used the placeholder avatar corresponding to their gender.
 
 {% include images.html caption="Gender neutral placeholder" name="type-avatar-placeholder-default" invisionID="360180774" %}
 
@@ -61,7 +61,7 @@ The x-large avatar size is used in the user profile dropdown menu.
 
 {% include images.html caption="x-large avatar" name="size-avatars-x-large" invisionID="360180771" %}
 
-The biggest size available for avatar, use to identify contacts on profile pages.
+The biggest size available for avatar is used to identify contacts on profile pages.
 
 {% include images.html caption="xx-large avatar" name="size-avatars-xx-large" invisionID="360180770" %}
 
@@ -69,7 +69,7 @@ The biggest size available for avatar, use to identify contacts on profile pages
 
 ## Avatar Groups
 
-Avatar can be grouped together in a stacked. When a stacked group contain more than 6 avatars, 5 are shown, the rest are represented by a number display on the sixth one. Hovering an avatar should
+Avatar can be grouped together in a stacked when there is limited space available. If a stacked group contain more than 6 avatars, 5 are shown, the rest are represented by a number. Hovering an avatar should
 display the corresponding user name.
 
 {% include images.html caption="Example of stacked avatars" name="group-avatars-5" invisionID="360180768" %}

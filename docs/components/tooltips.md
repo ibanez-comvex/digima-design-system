@@ -18,7 +18,7 @@ nav_order: 6
 
 ## Description
 
-A tooltip is an element that appears on hover to provide additional information about a particular item.
+A tooltip is an element that appears on hover to provide additional information about a particular element.
 They are used to help users understand the meaning of an icon, showing the full version of a truncated text or providing contextual information about a specific UI element.
 
 ---
@@ -46,15 +46,21 @@ They are used to help users understand the meaning of an icon, showing the full 
 
 The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
 
-{% include images.html caption="Top" name="positioning-tooltips-top" invisionID="360161247" %}
+{% include images.html caption="North" name="positioning-tooltips-north" invisionID="360161247" %}
+
+{% include images.html caption="North west" name="positioning-tooltips-north-west" invisionID="360958275" %}
+
+{% include images.html caption="North east" name="positioning-tooltips-north-east" invisionID="360958274" %}
+
+{% include images.html caption="South" name="positioning-tooltips-south" invisionID="360161246" %}
+
+{% include images.html caption="South west" name="positioning-tooltips-south-west" invisionID="360958273" %}
+
+{% include images.html caption="South east" name="positioning-tooltips-south-east" invisionID="360958272" %}
 
 {% include images.html caption="Left" name="positioning-tooltips-left" invisionID="360161242" %}
 
-{% include images.html caption="Bottom" name="positioning-tooltips-bottom" invisionID="360161246" %}
-
 {% include images.html caption="Right" name="positioning-tooltips-right" invisionID="360161241" %}
-
-
 
 ---
 

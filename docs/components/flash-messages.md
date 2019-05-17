@@ -18,58 +18,80 @@ nav_order: 6
 
 ## Description
 
-A tooltip is an element that appears on hover to provide additional information about a particular element.
-They are used to help users understand the meaning of an icon, showing the full version of a truncated text or providing contextual information about a specific UI element.
+Flash messages inform users of a process that the app has performed or will perform. They appear temporarily, towards the top of the screen.
+
+They shouldn’t interrupt the user experience, and they don’t require user input to disappear. If hovered, flash message should remain visible until dismissed.
+Flash messages should be used to give feedback to users about a action they take. 
+
+- For informing users about an error/warning specific to one account or an app-wide issue use global alerts.
+- For a section specific error/warning use a section alert instead.
 
 ---
 
 ## Anatomy
 
-{% include images.html name="anatomy-tooltips" %}
+{% include images.html name="anatomy-flash-message" %}
 
-1. **Message**: The text within the tooltip should be concise and clear. it should not contain any links or buttons.
-2. **Pointer**: Arrow indicating the direction from where the tooltip originated from.
-
-
----
-
-## Tooltip Style
-
-
-{% include images.html caption="The default tooltip style" name="style-tooltip-text" invisionID="360161249" %}
-
-{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
+1. **Container**: The container color indicated the nature of the message and its severity.
+2. **Message**: A short message describing the event, copy is restricted to 2 lines in length. If the text overflows it should be truncate using an ellipsis.
+4. **Dismiss**: Use to close the flash message.
 
 ---
 
-## Tooltip Positioning
+## Styles
 
-The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+### Error
 
-{% include images.html caption="North" name="positioning-tooltips-north" invisionID="360161247" %}
+Error messages let the user know that something has gone wrong after they've tried to do something. Keep the message simple and direct, and avoid confusing the user with technical details.
 
-{% include images.html caption="North west" name="positioning-tooltips-north-west" invisionID="360958275" %}
+{% include images.html caption="The default error style" name="type-flash-message-error" invisionID="363658557" %}
 
-{% include images.html caption="North east" name="positioning-tooltips-north-east" invisionID="360958274" %}
+When required, messages can be display on up to 2 lines. However keep in mind that because flash messages are transient in nature, the copy must be concise.
 
-{% include images.html caption="South" name="positioning-tooltips-south" invisionID="360161246" %}
+{% include images.html name="type-flash-message-error-multilines" invisionID="363658556" %}
 
-{% include images.html caption="South west" name="positioning-tooltips-south-west" invisionID="360958273" %}
-
-{% include images.html caption="South east" name="positioning-tooltips-south-east" invisionID="360958272" %}
-
-{% include images.html caption="Left" name="positioning-tooltips-left" invisionID="360161242" %}
-
-{% include images.html caption="Right" name="positioning-tooltips-right" invisionID="360161241" %}
+{% include images.html caption="Hover state, clicking the entire hightailed area should dismiss the flash message" name="type-flash-message-error-hover" invisionID="363661865" %}
 
 ---
 
-## Overflow
+### Warning
 
-The tooltip text wraps when the content is wider than the max-width. Additionally, the text can be set to truncate, which is useful when displaying user-generated content of variable length.
+Warning messages appear before we request the user to take action. This is usually in anticipation of a significant change. If the warning comes before an action, clearly communicate what will happen if the they proceed, and provide an alternative where possible.
 
-{% include images.html name="overflow-tooltips-single-line" invisionID="360161245" %}
+{% include images.html name="type-flash-message-warning" invisionID="363658555" %}
 
-{% include images.html name="overflow-tooltips-2-lines" invisionID="360161244" %}
+{% include images.html caption="Hover state, clicking the entire hightailed area should dismiss the flash message" name="type-flash-message-warning-hover" invisionID="363661864" %}
 
-{% include images.html caption="Example of a truncated contact status description" name="overflow-tooltips-truncated" invisionID="360161243" %}
+---
+
+### Success
+
+Success messages let the user know that they have completed an action. The messages should reaffirm the outcome and get out of the user's way.
+
+{% include images.html name="type-flash-message-success" invisionID="363658554" %}
+
+{% include images.html caption="Hover state, clicking the entire hightailed area should dismiss the flash message" name="type-flash-message-success-hover" invisionID="363661863" %}
+
+---
+
+### Info
+
+Info messages alert the user to additional information without requiring an action, the inform the user about something that might help or impact them. Info messages can also be used for loading states like heavy bulk actions.
+
+{% include images.html name="type-flash-message-info" invisionID="363658553" %}
+
+{% include images.html caption="Hover state, clicking the entire hightailed area should dismiss the flash message" name="type-flash-message-info-hover" invisionID="363661862" %}
+
+{% include images.html name="type-flash-message-info-loading" caption="Let the user know that something is happening by using an info message" invisionID="363668180" %}
+
+---
+
+## Positioning and Stacking
+
+Flash messages appear toward the top of the screen below the main navigation.
+
+When multiple flash messages are displayed, they will stack on top of one another with the most recent me on top. When a user dismisses a flag, any older flags below will come to the top.
+
+{% include images.html name="positioning-flash-message-positioning" invisionID="363658552" %}
+
+{% include images.html name="positioning-flash-message-stacking" invisionID="363658558" %}

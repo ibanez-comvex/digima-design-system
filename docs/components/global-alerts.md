@@ -22,8 +22,10 @@ Global alerts communicate messages that are specific to one account or an app-wi
 They should appear one at a time above the top-level primary navigation. They should be used sparingly to preserve their impact and only to deliver error or warning messages.
 
 
-- For a page specific error/warning use a banner instead.
+- For a section specific error/warning use a section alert instead.
+- For informing users about the state of a background process after an action has been taken use a flash message.
 - Global alerts should not be used as as a marketing tool.
+- Errors have priority over warnings messages.
 
 ---
 
@@ -53,3 +55,12 @@ The copy should clearly communicate to the user what the issue is and how it may
 Use a system alert to communicate an account-level issues or performance that only minimally affect product usage such as a permissions or data issue, planned outages or a non-critical browser incompatibility. System alerts should be dismissible.
 
 {% include images.html caption="Message should be clear and concise" name="type-global-alerts-warning" invisionID="359931126" %}
+
+
+---
+
+## Position
+
+Global alerts should should alway appear directly above the main navigation.
+
+{% include images.html name="type-global-alerts-prosition" %}

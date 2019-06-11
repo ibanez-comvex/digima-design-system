@@ -60,6 +60,13 @@ Some cases may require a modal above another modal. Due to the various sizes and
 
 ---
 
+## Close Icon states
+
+
+{% include images.html name="close-state-default" caption="Close icon default state" invisionID="368020576" %}
+
+{% include images.html name="close-state-hover" caption="Close icon hover state" invisionID="368020575" %}
+
 ## Types
 
 ### Productivity

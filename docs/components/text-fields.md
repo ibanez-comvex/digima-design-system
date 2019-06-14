@@ -213,3 +213,14 @@ Text input can also be grouped with a dropdown button.
 {% include images.html caption="Error State" name="type-input-dropdown-addon-error" invisionID="352589881" %}
 {% include images.html caption="Warning State" name="type-input-dropdown-addon-warning" invisionID="352589880" %}
 {% include images.html caption="Disabled State" name="type-input-dropdown-addon-disabled" invisionID="352589879" %}
+
+---
+
+### Draggable
+
+Text felids can be reorder.
+{% include images.html caption="Default State" name="type-input-draggble-default" invisionID="368266308" %}
+{% include images.html caption="Hover State" name="type-input-draggble-hover" invisionID="368266307" %}
+{% include images.html caption="Dragging State" name="type-input-draggble-dragging" invisionID="368266306" %}
+{% include images.html caption="Target State" name="type-input-draggble-target" invisionID="368266305" %}
+{% include images.html caption="The drag target should move alongside the dragged field to indicate where the field can be dropped" name="type-input-draggble-behaviour" invisionID="368266304" %}

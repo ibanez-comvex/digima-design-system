@@ -76,13 +76,23 @@ Use to list additional information like a website URL for a company. Related act
 
 Basic cards are mostly used in timelines to display important contact activities. These activities are usually initiated by a contact like an email open or a web visits activity.
 
-{% include images.html caption="Example of a basic card type" name="type-card-basic" invisionID="368524811" %}
+{% include images.html caption="Status update" name="type-card-basic-status-update" invisionID="368524811" %}
 
-Similar activities can be collapsed to save vertical scrolling space.
+{% include images.html caption="Profile update" name="type-card-basic-profile-update" invisionID="369021779" %}
 
-{% include images.html caption="Example of collapsed group of status update activities" name="type-card-basic-collapsed" invisionID="368529717" %}
+{% include images.html caption="Web form submission" name="type-card-basic-web-form-submissions" invisionID="369021778" %}
 
-{% include images.html name="type-card-basic-uncollapse" invisionID="368529716" %}
+{% include images.html caption="Web tracking" name="type-card-basic-web-tracking" invisionID="369021777" %}
+
+{% include images.html caption="Email sent" name="type-card-basic-email-sent" invisionID="369021776" %}
+
+{% include images.html caption="Email opened" name="type-card-basic-email-opened" invisionID="369021775" %}
+
+{% include images.html caption="Email clicked" name="type-card-basic-email-clicked" invisionID="369021774" %}
+
+{% include images.html caption="Call" name="type-card-basic-call" invisionID="369021773" %}
+
+{% include images.html caption="Logged activity" name="type-card-basic-log-activity" invisionID="369021772" %}
 
 ---
 
@@ -154,6 +164,18 @@ Card footers show secondary information as well as links and actions. They can e
 {% include images.html caption="Example of a footer containing an action link" name="element-card-footer-action" invisionID="368524800" %}
 {% include images.html caption="Expendable footer" name="element-card-footer-expandable-closed" invisionID="368524799" %}
 {% include images.html caption="Expended footer" name="element-card-footer-expandable-open" invisionID="368524798" %}
+
+---
+
+## Behavior
+
+### Collapse
+
+Similar activities can be collapsed to save vertical scrolling space.
+
+{% include images.html caption="Example of collapsed group of status update activities" name="type-card-basic-collapsed" invisionID="368529717" %}
+
+{% include images.html name="type-card-basic-uncollapse" invisionID="368529716" %}
 
 ---
 

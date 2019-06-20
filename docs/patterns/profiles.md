@@ -34,7 +34,7 @@ The title cards helps define the uppermost part a page. It is the first section 
 
 {% include images.html name="anatomie-title-cards" %}
 
-- [Learn more about title cards]({{site.baseurl}}/docs/components/title-cards.html)
+[Learn more about title cards]({{site.baseurl}}/docs/components/title-cards.html)
 
 ---
 
@@ -42,9 +42,58 @@ The title cards helps define the uppermost part a page. It is the first section 
 
 Block are used on profiles to group similar information together. They can be expended, collapsed and reorder.
 
-{% include images.html name="anatomie-blocks" %}
+- [Learn more about blocks anatomy and behavior]({{site.baseurl}}/docs/components/containers.html#blocks)
+- [Learn more about tile anatomy and behavior]({{site.baseurl}}/docs/components/containers.html#tiles)
 
-- [Learn more about blocks]({{site.baseurl}}/docs/components/containers.html#blocks)
+#### Notes
+
+{% include images.html caption="Default notes block state" name="anatomie-blocks-notes-default" invisionID="369022267" %}
+
+{% include images.html caption="Editing notes block state" name="anatomie-blocks-notes-editing" invisionID="369022254" %}
+
+---
+
+#### Details
+
+{% include images.html caption="Default detail block state" name="anatomie-blocks-details-default" invisionID="369022266" %}
+
+{% include images.html caption="Editing detail block state" name="anatomie-blocks-details-editing" invisionID="369022265" %}
+
+{% include images.html caption="Managing detail block fields state" name="anatomie-blocks-details-managing" invisionID="369022264" %}
+
+---
+
+#### Company
+
+{% include images.html caption="Empty company block state" name="anatomie-blocks-company-empty" invisionID="369022263" %}
+
+{% include images.html caption="Associated company block state" name="anatomie-blocks-company-associated" invisionID="369022262" %}
+
+{% include images.html caption="Expended company block state" name="anatomie-blocks-company-expanded" invisionID="369022261" %}
+
+---
+
+#### Groups
+
+{% include images.html caption="Empty group block state" name="anatomie-blocks-group-empty" invisionID="369022260" %}
+
+{% include images.html caption="Associated groups block state" name="anatomie-blocks-group-associated" invisionID="369022257" %}
+
+---
+
+#### Call Campaigns
+
+{% include images.html caption="Empty call campaign block state" name="anatomie-blocks-call-campaign-empty" invisionID="369022259" %}
+
+{% include images.html caption="Associated call campaigns block state" name="anatomie-blocks-call-campaigns-associated" invisionID="369022256" %}
+
+---
+
+#### Contacts
+
+{% include images.html caption="Empty contact block state" name="anatomie-blocks-contact-empty" invisionID="369022258" %}
+
+{% include images.html caption="Associated contacts block state" name="anatomie-blocks-contact-associated" invisionID="369022255" %}
 
 ---
 
@@ -59,26 +108,124 @@ The timeline display contact upcoming and past activities in a chronological ord
 
 ---
 
-## Widgets
+## 4. Widgets
+
+Widgets are special modals that let users interact with a contact and register past and future activities. They can be display at 3 different sizes.
+
+### Reduced（default）
+
+When reduced, a widget is displayed at the bottom right corner of the screen and scrolls with the page.
+A reduced widget has a max-width of 650px and its height varies depending on its content.
+
+{% include images.html name="widget-behavior-windowed" %}
+
+---
+
+### Full Screen
+
+When in full screen, a widget is centered within the browser window and an overlay is display behind it.
+The widget dimensions should be relative to the browser window width and height.
+
+{% include images.html name="widget-behavior-fullscreen" %}
+
+---
+
+### Minimized
+
+When minimized only the header of the widget is visible. The wight of the widget is also reduced.
+
+{% include images.html name="widget-behavior-minimize" %}
+
+---
+
+### Leaving an Edited Widget
+
+If a user tries to open a widget while another one is currently been edited, a message should be displayed warning users that changes made to the widget will be lost.
+
+The same message should be displayed if a user try to navigate away from the page while a widget is been edited.
+
+{% include images.html name="widget-behavior-leaving" %}
+
+---
 
 ### Send an Email
 
-The timeline display contact upcoming and past activities in a chronological order. It can be exported and filtered.
+Users can send emails to contacts using the email widget. Warnings should be displayed below the widget title.
 
-{% include images.html name="anatomie-timeline" %}
+{% include images.html caption="Default email widget" name="widget-email-default-windowed" invisionID="369032543" %}
+
+{% include images.html caption="Warnings should be displayed below the widget title" name="widget-email-in-exclusion-list-windowed" invisionID="369032540" %}
 
 ---
 
 ### Make a Call
 
-The timeline display contact upcoming and past activities in a chronological order. It can be exported and filtered.
+Users can call contacts using the call widget. Warnings should be displayed below the widget title.
 
-{% include images.html name="anatomie-timeline" %}
+{% include images.html caption="Default call widget" name="widget-call-default-windowed" invisionID="369032542" %}
+
+{% include images.html caption="Warnings should be displayed below the widget title" name="widget-call-do-not-call-windowed" invisionID="369032539" %}
+
+---
+
+#### Call Bar
+
+When the "call contact" button is clicked the call widget should disappear and the call bar should be display at the bottom of the screen.
+
+Users should be able to navigate to any page. Notes written on the widget should be transferred to the call bar.
+
+
+{% include images.html caption="The call bar should always be displayed a the bottom of the screen" name="widget-call-bar-position" %}
+
+{% include images.html caption="Call bar while calling from a call campaign" name="widget-call-bar-Call-campaign" invisionID="369033493" %}
+
+{% include images.html caption="Call bar while calling from outside of a call campaign" name="widget-call-bar-direct-call" invisionID="369033497" %}
+
+{% include images.html caption="User can type note directly from the call bar. Notes taken on the call widget should be transferred to the call bar" name="widget-call-bar-direct-call-notes" invisionID="369033496" %}
+
+{% include images.html caption="Hover state on the hangup button" name="widget-call-bar-direct-call-hangup-hover" invisionID="369033495" %}
+
+{% include images.html caption="Hover state on the microphone button" name="widget-call-bar-direct-call-microphone-hover" invisionID="369033494" %}
+
 
 ---
 
 ### Log an Activity
 
-The timeline display contact upcoming and past activities in a chronological order. It can be exported and filtered.
+Users can register a call, email, meeting or custom activity using the log an activity widget.
 
-{% include images.html name="anatomie-timeline" %}
+{% include images.html name="widget-log-default-windowed" invisionID="369032541" %}
+
+---
+
+## Layout
+
+### Left Column
+
+The left Column has a max-width of 25% and a min-width value of 400px and the following flex value: 25% 0 0.
+
+{% include images.html name="layout-profile-left-col"%}
+
+---
+
+### Central Column
+
+The center Column has a fluid width with a flex-grow value of 1.
+
+{% include images.html name="layout-profile-center-col" %}
+
+---
+
+### Right Column
+
+The right Column has a max-width of 500px and the following flex value: 0 0 25%.
+
+{% include images.html name="layout-profile-right-col" %}
+
+To let user focus on important content on smaller screen, the right column can be hidden.
+
+{% include images.html name="layout-profile-collapse" %}
+
+When the right column is hidden, the central column extend to fill the newly freed space.
+
+{% include images.html name="layout-profile-right-col-collapsed" %}

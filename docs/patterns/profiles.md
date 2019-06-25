@@ -19,8 +19,8 @@ nav_order: 2
 ## Description
 
 Profile pages regroup information about a contact or a company.
-- [Inspect the contact profile](https://projects.invisionapp.com/d/main#/console/16722341/368785272/preview)
-- [Inspect the company profile](https://projects.invisionapp.com/d/main#/console/16722341/368785271/preview)
+- [Inspect the contact profile](https://projects.invisionapp.com/d/main#/console/17798086/370025166/preview)
+- [Inspect the company profile](https://projects.invisionapp.com/d/main#/console/17853042/370243914/preview)
 
 ## Anatomy
 
@@ -30,7 +30,7 @@ Profile pages regroup information about a contact or a company.
 
 ### 1. Title Card
 
-The title cards helps define the uppermost part a page. It is the first section that people see before scrolling and provides the core information that users need when viewing the page.
+The title cards helps define the uppermost part of a page. It is the first section that users see before scrolling and it provides the core information that users need when viewing the page.
 
 {% include images.html name="anatomie-title-cards" %}
 
@@ -132,7 +132,7 @@ The widget dimensions should be relative to the browser window width and height.
 
 ### Minimized
 
-When minimized only the header of the widget is visible. The wight of the widget is also reduced.
+When minimized only the header of the widget is visible. The width of the widget is also reduced.
 
 {% include images.html name="widget-behavior-minimize" %}
 
@@ -192,7 +192,7 @@ Users should be able to navigate to any page. Notes written on the widget should
 
 ### Log an Activity
 
-Users can register a call, email, meeting or custom activity using the log an activity widget.
+Users can register a call, email, meeting or a custom activity using the log an activity widget.
 
 {% include images.html name="widget-log-default-windowed" invisionID="369032541" %}
 

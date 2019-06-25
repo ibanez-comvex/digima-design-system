@@ -23,7 +23,9 @@ They are used to help users understand the meaning of an icon, showing the full 
 
 ---
 
-## Anatomy
+## Buttons
+
+### Anatomy
 
 {% include images.html name="anatomy-tooltips" %}
 
@@ -33,43 +35,91 @@ They are used to help users understand the meaning of an icon, showing the full 
 
 ---
 
-## Tooltip Style
+### Types
 
+#### Primary
 
-{% include images.html caption="The default tooltip style" name="style-tooltip-text" invisionID="360161249" %}
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+
+- Full
+- Outlined
+- Split
+- Loading
 
 {% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
 
 ---
 
-## Tooltip Positioning
+#### Secondary
 
 The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
 
-{% include images.html caption="North" name="positioning-tooltips-north" invisionID="360161247" %}
+- Full
+- Outlined
+- Split
+- Loading
 
-{% include images.html caption="North west" name="positioning-tooltips-north-west" invisionID="360958275" %}
-
-{% include images.html caption="North east" name="positioning-tooltips-north-east" invisionID="360958274" %}
-
-{% include images.html caption="South" name="positioning-tooltips-south" invisionID="360161246" %}
-
-{% include images.html caption="South west" name="positioning-tooltips-south-west" invisionID="360958273" %}
-
-{% include images.html caption="South east" name="positioning-tooltips-south-east" invisionID="360958272" %}
-
-{% include images.html caption="Left" name="positioning-tooltips-left" invisionID="360161242" %}
-
-{% include images.html caption="Right" name="positioning-tooltips-right" invisionID="360161241" %}
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
 
 ---
 
-## Overflow
+#### Ternary
 
-The tooltip text wraps when the content is wider than the max-width. Additionally, the text can be set to truncate, which is useful when displaying user-generated content of variable length.
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
 
-{% include images.html name="overflow-tooltips-single-line" invisionID="360161245" %}
+- Full
+- Outlined
+- Split
+- Loading
 
-{% include images.html name="overflow-tooltips-2-lines" invisionID="360161244" %}
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
 
-{% include images.html caption="Example of a truncated contact status description" name="overflow-tooltips-truncated" invisionID="360161243" %}
+---
+
+#### Danger
+
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+
+- Full
+- Outlined
+- Split
+- Loading
+
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
+
+---
+
+#### Icon Only
+
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
+
+---
+
+### Button Groups
+
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+
+- 3 dots menus
+- Arrow menu
+
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
+
+---
+
+## Links
+
+### Default Links
+
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}
+
+---
+
+### Icon Links
+
+The position of tooltips is flexible and will change depending on how close the element is to the edge of the screen.
+
+{% include images.html caption="Used to display additional information on charts" name="style-tooltip-charts" invisionID="360161248" %}

@@ -119,7 +119,7 @@ Card headers help users identify a card activity at a glance by displaying the n
 
 #### 2. Description
 
-Card descriptions give users details information about an activity. They can include text link.
+Card descriptions give users details information about an activity. They can include text links.
 {% include images.html name="element-card-description" invisionID="368524805" %}
 
 ---
@@ -141,7 +141,7 @@ Cards containing actions should be consolidated inside a 3 dots menu.
 
 #### 5. Sections (optional)
 
-Some activities can contain addition information like a recording or a call outcome for call activities.
+Some activities can contain additional information like a recording or a call outcome for call activities.
 Each information should be display in a separate section and should stack on top of each other.
 {% include images.html name="element-card-sections" invisionID="368524804" %}
 
@@ -149,7 +149,7 @@ Each information should be display in a separate section and should stack on top
 
 #### 6. Expendable Text (optional)
 
-To keep vertical scrolling to a minimum, text that are longer than 3 lines should be truncated. Users can click on a link to display the full version.
+To keep vertical scrolling to a minimum, text that are longer than 4 lines should be truncated. Users can click on a link to display the full version.
 
 {% include images.html caption="Example of a truncated text" name="element-card-expandable-text-closed" invisionID="368524803" %}
 {% include images.html name="element-card-expandable-text-opened" invisionID="368524802" %}
@@ -188,9 +188,9 @@ Similar activities can be collapsed to save vertical scrolling space.
 1. **Drag handle**: (optional) Give users the ability to reorder blocks
 2. **Collapse icon**: (optional) Clicking this icon should collapse/uncollapse the block
 3. **Header text**: The main block identifier. Clicking this should collapse/uncollapse the block
-4. **Actions**: (optional) Blocks can contain actions allowing users to add a contact to a group, a call campaign or associating it to a company
-5. **Content**: Blocks mainly contain form fields and tiles
-6. **Show/hide details**: (optional) To limit vertical scroll, blocks can be truncated. Users can choose to expand a block by clicking an action link
+4. **Actions**: (optional) Blocks can contain actions like adding a contact to a group, a call campaign or a company
+5. **Content**: Blocks mainly contain [form fields]({{site.baseurl}}/docs/components//text-fields.html) and [tiles]({{site.baseurl}}/docs/components/containers.html#tile)
+6. **Show/hide details**: (optional) To limit vertical scroll, blocks can be truncated. Users can choose to expand a block by clicking the "show details" link
 
 ---
 

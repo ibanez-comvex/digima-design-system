@@ -17,9 +17,9 @@ nav_order: 6
 ---
 
 ## Description
-The title cards helps define the uppermost part a page. It is the first section that people see before scrolling and provides the core information that users need when viewing the page. 
+The title cards helps define the uppermost part of a page. It is the first section that people see before scrolling and provides the core information that users need when viewing the page.
 
-Title cards is a template that helps combine other components (Avatar, headings, actions, and chips) to create a consistent user experience.
+Title cards combine other components (Avatar, headings, actions, and chips) to create a consistent user experience.
 
 ---
 
@@ -28,11 +28,11 @@ Title cards is a template that helps combine other components (Avatar, headings,
 {% include images.html name="anatomie-title-card" %}
 
 1. **Back arrow**: allow user to go back to the previous page.
-2. **Avatar**  (optional): Help identify a user or a contact.
+2. **Avatar**  (optional): Help identify a user, a contact or a company.
 3. **Addition information** (optional): Optional informations that help users get a quick overview of the underlying page/section.
 4. **Title**: Page title summarizes the page content. The title should be truncated if too long and an ellipse should be added at the end.
 5. **Chips** (optional) : Highlight an important status regarding the whole page.
-6. **Actions** (optional): Actions that are global to page and the modify its content.
+6. **Actions** (optional): Actions that are global to page and modify its content.
 
 ---
 

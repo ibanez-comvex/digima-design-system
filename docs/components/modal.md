@@ -75,6 +75,7 @@ Use this modal when there are simple productivity-related tasks to be completed.
 <a target="blank" href="https://docs.google.com/spreadsheets/d/168ljhKlfHvYJE68rxPE0e614wuitF6PGe8gtczzFfB4/edit?usp=sharing">See full list here.</a>
 {% include images.html caption="Example of a productivity modal, user selection" name="modal-productivity-select-users" invisionID="352589140" %}
 {% include images.html caption="Contact status creation modal" name="modal-productivity-add-status" invisionID="352589139" %}
+{% include images.html caption="Example of an extra large productivity modal" name="modal-productivity-x-large" invisionID="371009974" %}
 
 ---
 

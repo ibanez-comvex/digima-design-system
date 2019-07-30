@@ -223,8 +223,6 @@ Users can modify the number of table row displayed on each page to fit their nee
 - 50
 - 100
 
-The default density per page applied to a table depend on how many items are likely to be display and how likely users are to be browsing the table.
-
 {% include images.html name="anatomy-tables-row-selection-data-density" %}
 
 ---

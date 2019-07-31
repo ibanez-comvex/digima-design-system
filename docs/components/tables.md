@@ -21,7 +21,7 @@ Data tables display information in a grid-like format of rows and columns. They 
 
 Additional resources:
 - <a target="blank" href="https://projects.invisionapp.com/d/main#/projects/prototypes/18103131">List of Digima table designs.</a>
-- <a target="blank" href="https://docs.google.com/spreadsheets/d/17GaNYlvDj1Ktskgd_8b8J8hXkqG-muui1J-bqrA9db0/edit#gid=0">Digima table contents breakdown.</a>
+- <a target="blank" href="https://docs.google.com/spreadsheets/d/17GaNYlvDj1Ktskgd_8b8J8hXkqG-muui1J-bqrA9db0/edit#gid=0">Digima table default configuration.</a>
 
 ---
 
@@ -209,6 +209,14 @@ There are 3 null states used in table:
 - N/A (rare) Use when the content to be displayed is not relevant to that row of data. If content is not applicable consider whether these objects belong in the same table.
 
 {% include images.html caption="Example of a table containing Em dash to signify empty states" name="anatomy-tables-row-empty-state" %}
+
+---
+
+#### Loading State
+
+When a user visit a page containing a table, placeholder content should be displayed instead of empty tables until content is loaded.
+
+{% include images.html caption="Table showing placeholder content" name="anatomy-tables-row-placeholder" %}
 
 ---
 

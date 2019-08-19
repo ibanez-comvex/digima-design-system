@@ -21,7 +21,7 @@ nav_order: 6
 Flash messages inform users of a process that the app has performed or will perform. They appear temporarily, towards the top of the screen.
 
 They shouldn’t interrupt the user experience, and they don’t require user input to disappear. If hovered, flash message should remain visible until dismissed.
-Flash messages should be used to give feedback to users about a action they take. 
+Flash messages should be used to give feedback to users about an action they took.
 
 - For informing users about an error/warning specific to one account or an app-wide issue use global alerts.
 - For a section specific error/warning use a section alert instead.

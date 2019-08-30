@@ -180,6 +180,16 @@ Used as the default Digima link color and in info messages.
       </div>          
     </div>
   </div>
+   <div class="set_row">
+    <div class="set_block count_4">
+      <p class="copy-text">Copy HEX</p>
+      {% include images.html name="colors-primary-blue-300" %}
+      <div class="infos">
+        <p>Blue 300</p>
+        <span class="colorValue" >#D9EFFF</span>
+      </div>          
+    </div>
+  </div>
 </div>
 
 ---

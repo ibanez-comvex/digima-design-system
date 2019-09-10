@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Page Headers
+title: Filters
 parent: patterns
 nav_order: 2
 ---
@@ -59,16 +59,4 @@ Secondary information can be displayed under the page title when they provide us
 
 Secondary navigation within a page header should be displayed as tabs under the page title.
 {% include images.html name="page-header-types-tabs" invisionID="382635793" %}
-
-
-### Centered White
-
-Used as header in the email creation screen.
-{% include images.html name="page-header-types-centered-white" invisionID="383111659" %}
-
-
-### Centered Black
-
-Used as header in the import screen.
-{% include images.html name="page-header-types-centered-black" invisionID="383111658" %}
 

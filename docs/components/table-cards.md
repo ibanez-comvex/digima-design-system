@@ -91,8 +91,11 @@ Users can display cards up to a month from the current date by clicking on the s
 
 Up to 6 cards can be displayed simultaneously on large screens. As the available screen space decrease cards are hidden from view.
 
+
 {% include images.html caption="Large screens" name="layout-cards-table-large" %}
 
 {% include images.html caption="Medium screens" name="layout-cards-table-meduim" %}
 
 {% include images.html caption="Small screens" name="layout-cards-table-Small" %}
+
+{% include images.html caption="User can vertically scroll the card container using arrow contols to display the hidden cards when less than 6 cards are been displayed." name="group-cards-table-small" invisionID="386481569" %}

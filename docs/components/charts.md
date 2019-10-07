@@ -22,6 +22,10 @@ Charts visualize complex data sets to aid comprehension and synthesize informati
 
 ---
 
+## Colors
+
+Upcoming
+
 ## Chart Types
 
 ### Doughnut progress Charts
@@ -48,13 +52,28 @@ The filled portion of the bar grows from left to right to indicate the percentag
 
 ---
 
-### Distribution Charts
+### Linear Distribution Charts
 
 Distribution charts are used to represent the relationship between different data relating to the same data set.
 
 {% include images.html caption="Filled state" name="charts-types-progress-Distribution-fill" invisionID="370994651" %}
 
 {% include images.html caption="Empty state" name="charts-types-progress-Distribution-empty" invisionID="370994649" %}
+
+---
+
+### Pie Charts
+
+Pie charts should be used when comparing a small amount of values to each other. 
+When comparing more than 4 values, use vertical bar charts rather than pie charts.
+
+{% include images.html caption="Comapring 2 sementic values" name="charts-types-pie-sementic-2-default" invisionID="387369828" %}
+
+{% include images.html caption="EComapring 4 sementic values" name="charts-types-pie-sementic-4-default" invisionID="387369827" %}
+
+{% include images.html caption="Empty state" name="charts-types-pie-sementic-2-empty" invisionID="387369826" %}
+
+{% include images.html name="charts-types-pie-dashbaord" invisionID="387369825" %}
 
 ---
 

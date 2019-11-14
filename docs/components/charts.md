@@ -38,6 +38,10 @@ Mainly used to provide the same type of information as a linear progress chart b
 
 {% include images.html caption="Disabled state" name="charts-types-progress-doughnut-disabled" invisionID="370994647" %}
 
+{% include images.html caption="Loading state" name="charts-types-progress-doughnut-loading" invisionID="393353839" %}
+
+{% include images.html caption="Error state" name="charts-types-progress-doughnut-error" invisionID="393353838" %}
+
 ---
 
 ### Linear Progress Charts
@@ -73,6 +77,10 @@ When comparing more than 4 values, use vertical bar charts rather than pie chart
 
 {% include images.html caption="Empty state" name="charts-types-pie-sementic-2-empty" invisionID="387369826" %}
 
+{% include images.html caption="Loading state" name="charts-types-pie-sementic-2-loading" invisionID="387369826" %}
+
+{% include images.html caption="Error state" name="charts-types-pie-sementic-2-error" invisionID="393353835" %}
+
 {% include images.html name="charts-types-pie-dashbaord" invisionID="387369825" %}
 
 ---
@@ -84,4 +92,8 @@ The height of each column is proportional to the data it represents.
 
 The major purpose of a bar charts is to visually orient the viewer to the relative size of the various elements. They are best suited at showing specific values.
 
-{% include images.html name="charts-types-bar" invisionID="370994646" %}
+{% include images.html caption="Default state" name="charts-types-bar" invisionID="370994646" %}
+
+{% include images.html caption="Loading state" name="charts-types-bar loading" invisionID="393353837" %}
+
+{% include images.html caption="Error state" name="charts-types-bar-error" invisionID="393353836" %}

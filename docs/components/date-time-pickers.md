@@ -72,7 +72,8 @@ the dialog should automatically close after the user has selected both a date an
 
 ### Date Range Selector
 
-Date range pickers allow a range of days to be selected.
+Date range pickers allow a range of days to be selected. Additionaly a list of predefined date ranges can be added to the left of a range picker to
+allow easy access to commonly used options.
 
 {% include images.html caption="Default State" name="type-date-range-custom-default" invisionID="386491315" %}
 

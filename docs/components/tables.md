@@ -178,6 +178,16 @@ Some table rows can be reorder. When a row is dragged, a target should be displa
 
 ---
 
+#### Expandable/Collapsable 
+
+Rows can be consolidated into a single row that can be expand/collapsed to reveal/hide additional related information.  
+
+{% include images.html caption="Clicking the plus icon expands the table to reveal more information" name="anatomy-tables-row-expandable" invisionID="396218082" %} 
+
+{% include images.html caption="Clicking the close icon collapses the table to hide the additional information" name="anatomy-tables-row-collapsable" invisionID="396218081" %} 
+
+---
+
 #### Actions
 
 Actions a user can take from an individual table row are displayed in the far right column.

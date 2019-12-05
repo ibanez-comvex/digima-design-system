@@ -180,7 +180,8 @@ Some table rows can be reorder. When a row is dragged, a target should be displa
 
 #### Expandable/Collapsable 
 
-Rows can be consolidated into a single row that can be expand/collapsed to reveal/hide additional related information.  
+Rows can be consolidated into a single row that can be expand/collapsed to reveal/hide additional related information. When the "plus" icon is clicked,
+any previously expanded row should be automatically collapsed.
 
 {% include images.html caption="Clicking the plus icon expands the table to reveal more information" name="anatomy-tables-row-expandable" invisionID="396218082" %} 
 

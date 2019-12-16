@@ -52,6 +52,14 @@ New activities should be loaded as the user scroll the timeline. In addition to 
 {% include images.html name="behaviour-scrolling-loading" %}
 {% include images.html name="behaviour-scrolling-fixed header" %}
 
+---
+
+### Refresh
+
+When an activity is created and the timeline need to be updated to display the newly added activity, a message should be displayed at the button of the timline letting users know that they
+need to refresh the timeline.
+{% include images.html name="behaviour-scrolling-filtering" %}
+
 
 ---
 
@@ -59,3 +67,5 @@ New activities should be loaded as the user scroll the timeline. In addition to 
 
 The timeline can be filter by activity types.
 {% include images.html name="behaviour-scrolling-filtering" %}
+
+

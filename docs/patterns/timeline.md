@@ -58,7 +58,7 @@ New activities should be loaded as the user scroll the timeline. In addition to 
 
 When an activity is created and the timeline need to be updated to display the newly added activity, a message should be displayed at the button of the timline letting users know that they
 need to refresh the timeline.
-{% include images.html name="behaviour-scrolling-filtering" %}
+{% include images.html name="behaviour-refresh" %}
 
 
 ---

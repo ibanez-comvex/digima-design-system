@@ -68,3 +68,17 @@ the dialog should automatically close after the user has selected both a date an
 {% include images.html caption="Hover State" name="type-date-time-picker-hover" invisionID="352588583" %}
 {% include images.html caption="Focused State - Dialog closes automatically after selection" name="type-date-time-picker-focused" invisionID="352588582" %}
 {% include images.html caption="Selected State with validation - Dialog only closes when the button is clicked" name="type-date-time-picker-focused-validation" invisionID="352588580" %}
+
+
+### Date Range Selector
+
+Date range pickers allow a range of days to be selected. Additionaly a list of predefined date ranges can be added to the left of a range picker to
+allow easy access to commonly used options.
+
+{% include images.html caption="Default State" name="type-date-range-custom-default" invisionID="386491315" %}
+
+After selecting a from date, dragging the cursor hover a date place after the from date, should hightlight the potential range.
+
+{% include images.html caption="From date selected cursor dragged" name="type-date-range-custom-from-selected-dragged" invisionID="386491314" %}
+
+{% include images.html caption="From and to date selected" name="type-date-range-custom-from-and-to-selected" invisionID="386491313" %}

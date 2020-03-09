@@ -150,21 +150,39 @@ The same message should be displayed if a user try to navigate away from the pag
 
 ### Send an Email
 
-Users can send emails to contacts using the email widget. Warnings should be displayed below the widget title.
+Users can send emails to contacts using the email widget.
+
+{% include images.html caption="Screen displayed when the email feature is not activated" name="widget-email-no-subscription" invisionID="369032540" %}
 
 {% include images.html caption="Default email widget" name="widget-email-default-windowed" invisionID="369032543" %}
-
-{% include images.html caption="Warnings should be displayed below the widget title" name="widget-email-in-exclusion-list-windowed" invisionID="369032540" %}
 
 ---
 
 ### Make a Call
 
-Users can call contacts using the call widget. Warnings should be displayed below the widget title.
+The call widget can have various states.
+
+{% include images.html caption="Screen displayed when no call features are activated" name="widget-call-no-subscription" invisionID="389559766" %}
+
+{% include images.html caption="Screen displayed when no phone number are registed for the contact" name="widget-call-default-no-phone-number" invisionID="389555867" %}
+
+{% include images.html caption="Screen displayed when a contact has a call restriction" name="widget-call-default-call-restriction" invisionID="389555865" %}
+
+{% include images.html caption="Screen displayed when a contact is awaiting a call back" name="widget-call-default-call-back" invisionID="389555864" %}
+
+{% include images.html caption="Screen displayed when no call outcome has been registered after the previous call" name="widget-call-default-add-call-outcome" invisionID="389555863" %}
 
 {% include images.html caption="Default call widget" name="widget-call-default-windowed" invisionID="369032542" %}
 
-{% include images.html caption="Warnings should be displayed below the widget title" name="widget-call-do-not-call-windowed" invisionID="369032539" %}
+{% include images.html caption="Default call widget when all call features are activated and phone number are registered" name="widget-call-default-windowed-dropdown-opened" invisionID="389555862" %}
+
+{% include images.html caption="Screen displayed when the selected contact phone number is in the exclusion list" name="widget-call-default-windowed-in-the-exclusion-list" invisionID="389974679" %}
+
+{% include images.html caption="The call from dorpdown should display the calling methods even when no phone number are registered for a particular call method" name="widget-call-default-windowed-dropdown-no-phone-number" invisionID="389555861" %}
+
+{% include images.html caption="Screen displayed when the browser call method is selected and no phone numbers are assiciated with it" name="widget-call-default-windowed-no-twillo-number" invisionID="389974678" %}
+
+{% include images.html caption="Screen displayed when the Call Digima call method is selected and no phone numbers are assiciated with it" name="widget-call-default-windowed-no-call-digima-subscription" invisionID="389974677" %}
 
 ---
 

@@ -97,11 +97,19 @@ Basic cards are mostly used in timelines to display important contact activities
 
 {% include images.html caption="Profile update" name="type-card-basic-profile-update" invisionID="369021779" %}
 
+{% include images.html caption="Profile update details" name="type-card-basic-profile-update-details" invisionID="379552144" %}
+
 {% include images.html caption="Web form submission" name="type-card-basic-web-form-submissions" invisionID="369021778" %}
+
+{% include images.html caption="Web form submission details" name="type-card-basic-web-form-submissions-details" invisionID="379552143" %}
 
 {% include images.html caption="Web tracking" name="type-card-basic-web-tracking" invisionID="369021777" %}
 
+{% include images.html caption="Web tracking history" name="type-card-basic-web-tracking-history" invisionID="379552142" %}
+
 {% include images.html caption="Email sent" name="type-card-basic-email-sent" invisionID="369021776" %}
+
+{% include images.html caption="Email sent history" name="type-card-basic-email-sent-history" invisionID="379552141" %}
 
 {% include images.html caption="Email opened" name="type-card-basic-email-opened" invisionID="369021775" %}
 

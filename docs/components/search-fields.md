@@ -47,9 +47,7 @@ Use search fields to allow users to quick filter a set of data. Search fields ar
 
 {% include images.html caption="Default state" name="type-search-default" invisionID="352589689" %}
 
-
 {% include images.html caption="Hover state" name="type-search-hover" invisionID="352589688" %}
-
 
 As soon as the user start typing a loading message should be displayed.
 {% include images.html caption="Loading state" name="type-search-typing" %}
@@ -62,3 +60,15 @@ As soon as the user start typing a loading message should be displayed.
 
 
 {% include images.html caption="Error state" name="type-search-filled-error" %}
+
+---
+
+## Search In Select
+
+Select field options can be filtered by using a dedicated search.
+
+{% include images.html caption="A search filed inside a list of users" name="type-search-dropdown-default" invisionID="396417328" %}
+
+{% include images.html caption="Example of a search retruning no results" name="type-search-dropdown-no-results" invisionID="396417327" %}
+
+{% include images.html caption="Example of a search returning an error" name="type-search-dropdown-error" invisionID="396417326" %}

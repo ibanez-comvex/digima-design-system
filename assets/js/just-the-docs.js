@@ -1,5 +1,27 @@
 
 
+function copyToClipboard(){
+  $(".count_4").click(function(){
+
+      if($(this).children().find(".colorValue").length > 0 ){
+
+        var hex = $(this).children().find(".colorValue");
+        var $temp = $('<input type="hidden">');
+
+        $("body").append($temp);
+        $temp.val($(hex).text()).select();
+
+        $(this).children(".copy-text").text("Copied !").fadeOut(1600, function(){
+          document.execCommand("copy");
+          $temp.remove();
+          $(this).text("Copy HEX").removeAttr("style");
+        })
+
+      }
+  })
+}
+
+
 // Event handling
 
 function addEvent(el, type, handler) {
@@ -180,6 +202,8 @@ function pageFocus() {
 // Document ready
 
 function ready() {
+
+  copyToClipboard();
   // toggleNav();
   pageFocus();
   if (typeof lunr !== "undefined") {

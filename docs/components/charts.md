@@ -22,6 +22,10 @@ Charts visualize complex data sets to aid comprehension and synthesize informati
 
 ---
 
+## Colors
+
+Upcoming
+
 ## Chart Types
 
 ### Doughnut progress Charts
@@ -33,6 +37,10 @@ Mainly used to provide the same type of information as a linear progress chart b
 {% include images.html caption="Empty state" name="charts-types-progress-doughnut-empty" invisionID="370994648" %}
 
 {% include images.html caption="Disabled state" name="charts-types-progress-doughnut-disabled" invisionID="370994647" %}
+
+{% include images.html caption="Loading state" name="charts-types-progress-doughnut-loading" invisionID="393353839" %}
+
+{% include images.html caption="Error state" name="charts-types-progress-doughnut-error" invisionID="393353838" %}
 
 ---
 
@@ -48,13 +56,32 @@ The filled portion of the bar grows from left to right to indicate the percentag
 
 ---
 
-### Distribution Charts
+### Linear Distribution Charts
 
 Distribution charts are used to represent the relationship between different data relating to the same data set.
 
 {% include images.html caption="Filled state" name="charts-types-progress-Distribution-fill" invisionID="370994651" %}
 
 {% include images.html caption="Empty state" name="charts-types-progress-Distribution-empty" invisionID="370994649" %}
+
+---
+
+### Pie Charts
+
+Pie charts should be used when comparing a small amount of values to each other. 
+When comparing more than 4 values, use vertical bar charts rather than pie charts.
+
+{% include images.html caption="Comapring 2 sementic values" name="charts-types-pie-sementic-2-default" invisionID="387369828" %}
+
+{% include images.html caption="EComapring 4 sementic values" name="charts-types-pie-sementic-4-default" invisionID="387369827" %}
+
+{% include images.html caption="Empty state" name="charts-types-pie-sementic-2-empty" invisionID="387369826" %}
+
+{% include images.html caption="Loading state" name="charts-types-pie-sementic-2-loading" invisionID="387369826" %}
+
+{% include images.html caption="Error state" name="charts-types-pie-sementic-2-error" invisionID="393353835" %}
+
+{% include images.html name="charts-types-pie-dashbaord" invisionID="387369825" %}
 
 ---
 
@@ -65,4 +92,8 @@ The height of each column is proportional to the data it represents.
 
 The major purpose of a bar charts is to visually orient the viewer to the relative size of the various elements. They are best suited at showing specific values.
 
-{% include images.html name="charts-types-bar" invisionID="370994646" %}
+{% include images.html caption="Default state" name="charts-types-bar" invisionID="370994646" %}
+
+{% include images.html caption="Loading state" name="charts-types-bar loading" invisionID="393353837" %}
+
+{% include images.html caption="Error state" name="charts-types-bar-error" invisionID="393353836" %}

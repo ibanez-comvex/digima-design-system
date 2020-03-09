@@ -65,6 +65,23 @@ Use to list additional information like a website URL for a company. Related act
 
 {% include images.html caption="When hovered extra space should be reserved to the left of the action link" name="behavior-block-truncation-avatar-hover" invisionID="368775569" %}
 
+---
+
+#### Filters
+
+Use to display filters information.
+
+{% include images.html caption="Default state" name="type-tile-filters" invisionID="408364167" %}
+
+{% include images.html caption="Hover state" name="type-tile-filters-tile-hover" invisionID="408364168" %}
+
+{% include images.html caption="Hover state on remove icon" name="type-tile-filters-close-hover" invisionID="408364166" %}
+
+{% include images.html caption="Empty state" name="type-tile-filters-empty-state" invisionID="408364165" %}
+
+
+---
+
 
 ## Cards
 

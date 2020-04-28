@@ -24,6 +24,69 @@ They should be easy to scan for relevant and actionable information. Elements, l
 
 ---
 
+## Action Nodes
+
+### Anatomy
+
+{% include images.html name="anatomie-action-nodes" %}
+
+1. **Header text**: Headers help users identify a node type at a glance by displaying the name of the node and a supporting icon.
+2. **Menu**: Action nodes containing actions should be consolidated inside an overflow menu. Delete actions should be listed last and in red.
+3. **Node description**: Action nodes descriptions give users the nessesary information to identify an action.
+4. **Node connector**: This is where action nodes connects to other actions
+
+---
+
+### Types
+
+#### Action nodes
+
+Actions nodes are activities that are trigged on specific contacts.
+
+{% include images.html caption="Send an email action node" name="type-action-nodes-actions-send-email" invisionID="415421036" %}
+
+{% include images.html caption="Add a delay action node" name="type-action-nodes-actions-add-delay" invisionID="415421037" %}
+
+---
+
+#### Entry Trigger Node
+
+An entry trigger node is unique to a workflow and should always be the first node.
+
+{% include images.html caption="Entry trigger node" name="type-trigger-nodes" invisionID="415421038" %}
+
+---
+
+#### Node Connectors
+
+A node trigger and node actions are visually connected via lines called node connectors.
+
+{% include images.html caption="Action node not yet connected to another action" name="Nodes-connections-no-next-action" invisionID="415421039" %}
+
+{% include images.html caption="Action node connected to another action" name="nodes-connections-next-action-added" invisionID="415421040" %}
+
+---
+
+#### Node States
+
+{% include images.html caption="Email action node default state" name="state-nodes-action-email-default" invisionID="415421044" %}
+
+{% include images.html caption="Email action node hover state" name="state-nodes-action-email-hover" invisionID="415421045" %}
+
+{% include images.html caption="Email action node action menu opened state" name="state-nodes-action-email-menu-opended" invisionID="415421046" %}
+
+{% include images.html caption="Delay action node default state" name="state-nodes-action-delay-default" invisionID="415421041" %}
+
+{% include images.html caption="Delay action node hover state" name="state-nodes-action-delay-default" invisionID="415421042" %}
+
+{% include images.html caption="Delay action node action menu opened state" name="state-nodes-action-delay-menu-opened" invisionID="415421043" %}
+
+{% include images.html caption="Entry trigger node default state" name="state-nodes-entry-trigger-default" invisionID="415421047" %}
+
+{% include images.html caption="Entry trigger node hover state" name="state-nodes-entry-trigger-hover" invisionID="415421048" %}
+
+---
+
 ## Tile
 
 ### Anatomy
